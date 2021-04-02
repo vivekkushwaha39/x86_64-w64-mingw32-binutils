@@ -1,0 +1,11 @@
+pkgbase = x86_64-w64-binutils
+	pkgver = 2.36
+	pkgrel = 1
+	url = https://ftp.gnu.org/gnu/binutils/
+	arch = x86_64
+	license = GPL
+	source = https://ftp.gnu.org/gnu/binutils/binutils-2.36.tar.xz
+	md5sums = f6114b8c40096f9aa9f64fe1ab8ba087
+
+pkgname = x86_64-w64-binutils
+

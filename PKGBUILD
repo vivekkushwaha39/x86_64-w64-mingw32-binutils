@@ -48,7 +48,7 @@ build() {
 	DEBUG_CFLAGS=""                          
 	DEBUG_CXXFLAGS=""                        
 	cd "$srcdir/binutils-$pkgver"
-	./configure --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --disable-multilib --prefix=$pkgdir/opt/x86-64-w64-mingw32
+	./configure CFLAGS="-O2" CXXFLAGS="-O2" --build=x86_64-unknown-linux-gnu --target=x86_64-w64-mingw32 --disable-multilib --prefix=$pkgdir/opt/x86_64-w64-mingw32 --with-sysroot=/opt/x86_64-w64-mingw32
 	make all
 }
 
